@@ -23,7 +23,7 @@
 ##### ~/.ssh/configの編集
 	Host heroku.slimeguild
 		HostName heroku.com
-		IdentityFile ~/slimeguild_rsa.pub
+		IdentityFile ~/.ssh/slimeguild_rsa
 		IdentitiesOnly yes
 
 
