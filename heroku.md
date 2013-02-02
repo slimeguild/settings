@@ -33,7 +33,7 @@
 	cd /PATH/TO/PROJECT
 	heroku accounts:set slimeguild
 
-#### 秘密鍵の登録
+#### 公開鍵の登録
 	heroku keys:add ~/.ssh/slimeguild_rsa.pub
 
 その他、必要なことがあればこちらから。
