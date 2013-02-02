@@ -19,6 +19,8 @@
 	
 	# Enter file in which to save the key
 	/Users/name/.ssh/id_rsa => /Users/name/.ssh/slimeguild_rsa
+	
+	chmod 600 ~/.ssh/slimeguild_rsa.pub
 
 ##### ~/.ssh/configの編集
 	Host heroku.slimeguild
@@ -27,8 +29,12 @@
 		IdentitiesOnly yes
 
 
-ここで生成された鍵のうち.pub(公開鍵)をherokuにログインして設定画面から追加する。
+##### プロジェクトでslimeguildのアカウントを使う
+	cd /PATH/TO/PROJECT
+	heroku accounts:set slimeguild
 
+#### 秘密鍵の登録
+	heroku keys:add ~/.ssh/slimeguild_rsa.pub
 
 その他、必要なことがあればこちらから。
 http://journal.sooey.com/162
