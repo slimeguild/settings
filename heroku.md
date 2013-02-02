@@ -36,11 +36,11 @@
 ##### 公開鍵の登録
 	heroku keys:add ~/.ssh/slimeguild_rsa.pub
 
-##### エラー対処法
-###### Your key with is not authorized to...と怒られた場合
+##### エラー対処法 (Your key with is not authorized to...)
+###### sshの設定を追加
 	ssh-add ~/.ssh/slimeguild_rsa
 
-	もしくは/PATH/TO/PROJECT/.git/configを確認
+###### もしくは/PATH/TO/PROJECT/.git/configを確認
 	[remote "heroku"]
         url = git@heroku.slimeguild:xxxx.git
         
