@@ -40,6 +40,12 @@
 ###### Your key with is not authorized to...と怒られた場合
 	ssh-add ~/.ssh/slimeguild_rsa
 
+	もしくは/PATH/TO/PROJECT/.git/configを確認
+	[remote "heroku"]
+        url = git@heroku.slimeguild:xxxx.git
+        
+        ※slimeguildになっていることが重要
+
 その他、必要なことがあればこちらから。
 http://journal.sooey.com/162
 
