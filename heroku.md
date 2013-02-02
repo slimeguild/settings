@@ -1,5 +1,5 @@
 ### heroku 設定およびアカウント追加
-###### herokuコマンドのインストール 
+##### herokuコマンドのインストール 
 
 	sudo gem isntall heroku
 
@@ -37,7 +37,7 @@
 	heroku keys:add ~/.ssh/slimeguild_rsa.pub
 
 ##### エラー対処法
-###### Your key with is not authorized to...
+###### Your key with is not authorized to...と怒られた場合
 	ssh-add ~/.ssh/slimeguild_rsa
 
 その他、必要なことがあればこちらから。
