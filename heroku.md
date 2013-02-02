@@ -33,8 +33,12 @@
 	cd /PATH/TO/PROJECT
 	heroku accounts:set slimeguild
 
-#### 公開鍵の登録
+##### 公開鍵の登録
 	heroku keys:add ~/.ssh/slimeguild_rsa.pub
+
+##### エラー対処法
+###### Your key with is not authorized to...
+	ssh-add ~/.ssh/slimeguild_rsa
 
 その他、必要なことがあればこちらから。
 http://journal.sooey.com/162
